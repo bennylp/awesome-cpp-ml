@@ -92,6 +92,7 @@ Comparison:
 ## Other Lists
 
 - [Awesome Machine Learning (C++ Section)](https://github.com/josephmisiti/awesome-machine-learning#cpp)
+- [http://mloss.org/software/](http://mloss.org/software/) - machine learning OSS.
 
 ## Other Stuff
 
