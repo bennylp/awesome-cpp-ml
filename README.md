@@ -92,3 +92,17 @@ Comparison:
 ## Other Lists
 
 - [Awesome Machine Learning (C++ Section)](https://github.com/josephmisiti/awesome-machine-learning#cpp)
+
+## Other Stuff
+
+### Machine Learning for Trading
+
+Software:
+- [Q Learning for Trading](https://github.com/ucaiado/QLearning_Trading): an adaptive learning model to trade a single stock under the reinforcement learning framework. 
+
+Papers:
+- An Electronic Market-Maker. N.T. Chan, C.R. Shelton. 2001
+- [Artificial Markets and Intelligent Agents. N.T. Chan. 2001](http://cbcl.mit.edu/cbcl/publications/theses/thesis-chan.pdf)
+- [Learning to Trade via Direct Reinforcement. John Moody and Matthew Saffell, IEEE Transactions on Neural Networks, Vol 12, No 4, July 2001](https://bi.snu.ac.kr/SEMINAR/Joint2k1/ojm5.pdf)
+- [The price impact of order book events. Journal of financial econometrics. R. Cont, k. Arseniy, and S. Sasha. 2014](https://pdfs.semanticscholar.org/d064/5eb3d744f9e962ff09b8a5e9156f2147e983.pdf)
+- [Algorithm Trading using Q-Learning and Recurrent Reinforcement Learning. Du, Xin, Jinjian Zhai, and Koupin Lv](http://cs229.stanford.edu/proj2009/LvDuZhai.pdf)
