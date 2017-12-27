@@ -101,8 +101,10 @@ Software:
 - [Q Learning for Trading](https://github.com/ucaiado/QLearning_Trading): an adaptive learning model to trade a single stock under the reinforcement learning framework. 
 
 Papers:
-- An Electronic Market-Maker. N.T. Chan, C.R. Shelton. 2001
-- [Artificial Markets and Intelligent Agents. N.T. Chan. 2001](http://cbcl.mit.edu/cbcl/publications/theses/thesis-chan.pdf)
-- [Learning to Trade via Direct Reinforcement. John Moody and Matthew Saffell, IEEE Transactions on Neural Networks, Vol 12, No 4, July 2001](https://bi.snu.ac.kr/SEMINAR/Joint2k1/ojm5.pdf)
-- [The price impact of order book events. Journal of financial econometrics. R. Cont, k. Arseniy, and S. Sasha. 2014](https://pdfs.semanticscholar.org/d064/5eb3d744f9e962ff09b8a5e9156f2147e983.pdf)
-- [Algorithm Trading using Q-Learning and Recurrent Reinforcement Learning. Du, Xin, Jinjian Zhai, and Koupin Lv](http://cs229.stanford.edu/proj2009/LvDuZhai.pdf)
+- [Optimal Asset Allocation using Adaptive Dynamic Programming](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.48.2563). Ralph Neuneier. 1996
+- [Artificial Markets and Intelligent Agents](http://cbcl.mit.edu/cbcl/publications/theses/thesis-chan.pdf). N.T. Chan. 2001
+- [Learning to Trade via Direct Reinforcement](https://bi.snu.ac.kr/SEMINAR/Joint2k1/ojm5.pdf). John Moody and Matthew Saffell, IEEE Transactions on Neural Networks, Vol 12, No 4, July 2001
+- [Reinforcement learning for trading systems and portfolios](https://vvvvw.aaai.org/Papers/KDD/1998/KDD98-049.pdf). John Moody , Matthew Saffell. 1998
+- [Algorithm Trading using Q-Learning and Recurrent Reinforcement Learning](http://cs229.stanford.edu/proj2009/LvDuZhai.pdf). Du, Xin, Jinjian Zhai, and Koupin Lv. 2009
+- [The price impact of order book events. Journal of financial econometrics](https://pdfs.semanticscholar.org/d064/5eb3d744f9e962ff09b8a5e9156f2147e983.pdf). R. Cont, k. Arseniy, and S. Sasha. 2014
+- [Agent Inspired Trading Using Recurrent Reinforcement Learning and LSTM Neural Networks](https://arxiv.org/abs/1707.07338). David W. Lu. 2017.
