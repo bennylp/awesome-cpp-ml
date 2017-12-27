@@ -20,11 +20,11 @@ The features listed here are based on my casual observations on Dec 2017. If you
 
 |              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 |--------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| Language     |    C++   |    C++   |     C    |    C     |          |          |          |  c++98   | C++98-14 |
+| Language     |    C++   |    C++   |     C    |    C     |     C    |    C++   |   C++    |  c++98   | C++98 - 14 |
 | License      | BSD like | Apache   | BSD like | free     | free/$   |  Boost   | BSD like |  MPL2    | Apache 2 |
-| Created      | 2010     | 2009     |          | 2007?    |   2009   |          |          |   2009   |          |
-| Last release | Jan 2016 | Apr 2015 | Nov 2017 |   ✓      | Apr 2014 |          | Sep 2015 | Jun 2017 |          |
-| Last commit  | Aug 2017 |          |          |          |          |          |          |          |          |
+| Created      | 2010     | 2009     |          | 2007?    |   2009   |          |          |   2009   |   2008   |
+| Last release | Jan 2016 | Apr 2015 | Nov 2017 |   ✓      | Apr 2014 |          | Sep 2015 | Jun 2017 | Dec 2017 |
+| Last commit  | Aug 2017 |          |          |          |          |          |          |          |    ✓     |
 |              |          |          |          |          |          |          |          |          |          |
 |              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 | Platforms:   |          |          |          |          |          |          |          |          |          |
@@ -38,9 +38,9 @@ The features listed here are based on my casual observations on Dec 2017. If you
 |              |          |          |          |          |          |          |          |          |          |
 |              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 | Features:    |          |          |          |          |          |          |          |          |          |
-| - Column or row major| both | both |          |  column  |          |          |   both   |   both   |  column  |
-| - Dense matrix|    ✓    |    ✓     |          |          |          |          |          |    ✓     |    ✓     |
-| - Sparse matrix|   ✓    |    ✓     |          |          |          |          |          |    ✓     |    ✓     |
+| - Column or row major| both | both |          |  column  |  column  |          |   both   |   both   |  column  |
+| - Dense matrix|    ✓    |    ✓     |          |          |    ✓     |          |          |    ✓     |    ✓     |
+| - Sparse matrix|   ✓    |    ✓     |          |          |    ✓     |          |          |    ✓     |    ✓     |
 | - Slice/view |     ✓    |    ✓     |          |          |          |    ✓     |          |    ✓     |    ✓     |
 | - BLAS L1    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |
 | - BLAS L2    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |    ✓     |    ✓     |
