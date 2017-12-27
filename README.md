@@ -18,7 +18,7 @@ CUDA.
 
 The features listed here are based on my casual observations on Dec 2017. If you see a feature is not checked, it could be because it is not supported or I didn't find it/didn't have time to find it out.
 
-|              | [ViennaCL](http://viennacl.sourceforge.net/) | [CUSP](https://github.com/cusplibrary/cusplibrary) | [MAGMA](http://icl.cs.utk.edu/magma/) | [cuBLAS](https://developer.nvidia.com/cublas) | [CULA](http://www.culatools.com/) | [uBlas](http://www.boost.org/doc/libs/1_59_0/libs/numeric/ublas/doc/) | [CUV](https://github.com/deeplearningais/CUV) | [Eigen](https://eigen.tuxfamily.org) | [Armadillo](http://arma.sourceforge.net/) |
+|              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 |--------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | Language     |    C++   |    C++   |     C    |    C     |          |          |          |  c++98   | C++98-14 |
 | License      | BSD like | Apache   | BSD like | free     | free/$   |  Boost   | BSD like |  MPL2    | Apache 2 |
@@ -26,6 +26,7 @@ The features listed here are based on my casual observations on Dec 2017. If you
 | Last release | Jan 2016 | Apr 2015 | Nov 2017 |   ✓      | Apr 2014 |          | Sep 2015 | Jun 2017 |          |
 | Last commit  | Aug 2017 |          |          |          |          |          |          |          |          |
 |              |          |          |          |          |          |          |          |          |          |
+|              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 | Platforms:   |          |          |          |          |          |          |          |          |          |
 | - CPU        |    ✓     |          |    ✓     |          |          |     ✓    |    ✓     |    ✓     |    ✓     |
 | - GPU        |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |    ✓     |    ✓     | partial  |
@@ -35,19 +36,21 @@ The features listed here are based on my casual observations on Dec 2017. If you
 |              |          |          |          |          |          |          |          |          |          |
 | Thrust compat|    ✓     |    ✓     |          |          |          |          |          |          |          |
 |              |          |          |          |          |          |          |          |          |          |
+|              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 | Features:    |          |          |          |          |          |          |          |          |          |
-| - Column or row major| both | both |          |  column  |          |          |   both   |          |  column  |
-| - Dense matrix|    ✓    |    ✓     |          |          |          |          |          |          |    ✓     |
-| - Sparse matrix|   ✓    |    ✓     |          |          |          |          |          |          |    ✓     |
-| - Slice/view |     ✓    |    ✓     |          |          |          |    ✓     |          |          |    ✓     |
+| - Column or row major| both | both |          |  column  |          |          |   both   |   both   |  column  |
+| - Dense matrix|    ✓    |    ✓     |          |          |          |          |          |    ✓     |    ✓     |
+| - Sparse matrix|   ✓    |    ✓     |          |          |          |          |          |    ✓     |    ✓     |
+| - Slice/view |     ✓    |    ✓     |          |          |          |    ✓     |          |    ✓     |    ✓     |
 | - BLAS L1    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |
 | - BLAS L2    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |    ✓     |    ✓     |
 | - BLAS L3    |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |    ✓     |    ✓     |
 |              |          |          |          |          |          |          |          |          |          |
+|              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 | Other:       |          |          |          |          |          |          |          |          |          |
 | - fancy operators|  ✓   |    -     |          |          |          |          |          |          |    ✓     |
 | - need Boost?| partly   |          |          |          |          |    ✓     |    ✓     |          |          |
 |              |          |          |          |          |          |          |          |          |          |
 | Notable users:| Singa, <10 |       |          |   many   |          |          |          | TensorFlow, Shogun, 70+ | MLPACK, 30+ |
-| =============== |ViennaCL|  CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
+|              |ViennaCL|  CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 
