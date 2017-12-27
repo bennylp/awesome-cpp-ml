@@ -18,13 +18,15 @@ CUDA.
 
 The features listed here are based on my casual observations on Dec 2017. If you see a feature is not checked, it could be because it is not supported or I didn't find it/didn't have time to find it out.
 
+Comparison:
+
 |              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 |--------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | Language     |    C++   |    C++   |     C    |    C     |     C    |    C++   |   C++    |  c++98   | C++98 - 14 |
 | License      | BSD like | Apache   | BSD like | free     | free/$   |  Boost   | BSD like |  MPL2    | Apache 2 |
-| Created      | 2010     | 2009     |          | 2007?    |   2009   |          |          |   2009   |   2008   |
-| Last release | Jan 2016 | Apr 2015 | Nov 2017 |   ✓      | Apr 2014 |          | Sep 2015 | Jun 2017 | Dec 2017 |
-| Last commit  | Aug 2017 |          |          |          |          |          |          |          |    ✓     |
+| Created      | 2010     | 2009     |          | 2007?    |   2009   |   2004   |          |   2009   |   2008   |
+| Last release | Jan 2016 | Apr 2015 | Nov 2017 |          | Apr 2014 | May 2016 | Sep 2015 | Jun 2017 | Dec 2017 |
+| Active       |    ?     |    ✗     |    ✓     |    ✓     |    ✗     |     ?    |    ✗     |    ✓     |    ✓     |
 |              |          |          |          |          |          |          |          |          |          |
 |              | ViennaCL |   CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 | Platforms:   |          |          |          |          |          |          |          |          |          |
@@ -51,6 +53,42 @@ The features listed here are based on my casual observations on Dec 2017. If you
 | - fancy operators|  ✓   |    -     |          |          |          |          |          |          |    ✓     |
 | - need Boost?| partly   |          |          |          |          |    ✓     |    ✓     |          |          |
 |              |          |          |          |          |          |          |          |          |          |
-| Notable users:| Singa, <10 |       |          |   many   |          |          |          | TensorFlow, Shogun, 70+ | MLPACK, 30+ |
+| Notable users| Singa, <10 |        |          |   many   |          |          |          | TensorFlow, Shogun, 70+ | MLPACK, 30+ |
 |              |ViennaCL|  CUSP   |  MAGMA   |  cuBLAS  |   CULA   |   uBLAS  |   CUV    |  Eigen   |Armadillo |
 
+
+## Machine Learning Frameworks
+
+Frameworks:
+- [MLPack](http://mlpack.org/): a scalable machine learning library, written in C++, that aims to provide fast, extensible implementations of cutting-edge machine learning algorithms.
+- [Shogun](http://shogun-toolbox.org/): open-source machine learning library that offers a wide range of efficient and unified machine learning methods.
+- [OpenNN](http://www.opennn.net/): an open source class library written in C++ programming language which implements neural networks with deep architectures, a main area of machine learning research.
+- [DLib](http://dlib.net/ml.html): contains a wide range of machine learning algorithms. All designed to be highly modular, quick to execute, and simple to use via a clean and modern C++ API.
+
+Comparison:
+
+|              |  MLPack  |  Shogun  |  OpenNN  |   DLib   |          |          |          |          |          |
+|--------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| License      | BSD like |  GPLv3   |  LGPLv3  |   Boost  |          |          |          |          |          |
+| Created      |   2011   |   1999   |   2012   |   2006   |          |          |          |          |          |
+| Active       |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+|              |          |          |          |          |          |          |          |          |          |
+| Platforms:   |          |          |          |          |          |          |          |          |          |
+| - CPU        |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+| - GPU        |    -     |    ?     |    ✓     |    -     |          |          |          |          |          |
+| - OpenMP     |    -     |    ?     |    ✓     |    -     |          |          |          |          |          |
+| - Windows    |          |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+|              |          |          |          |          |          |          |          |          |          |
+| Features:    |          |          |          |          |          |          |          |          |          |
+| - Supervised |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+| - Unsupervised|         |    ✓     |    -     |    ✓     |          |          |          |          |          |
+| - RL         |    ✓     |    -     |    -     |    ~     |          |          |          |          |          |
+|              |          |          |          |          |          |          |          |          |          |
+| Matrix lib   | Armadillo|          |  Eigen   |   own    |          |          |          |          |          |
+|              |          |          |          |          |          |          |          |          |          |
+| Notable users|          |          |          |    10+   |          |          |          |          |          |
+
+
+## Other Lists
+
+- [Awesome Machine Learning (C++ Section)](https://github.com/josephmisiti/awesome-machine-learning#cpp)
