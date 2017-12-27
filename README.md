@@ -64,30 +64,36 @@ Frameworks:
 - [Shogun](http://shogun-toolbox.org/): open-source machine learning library that offers a wide range of efficient and unified machine learning methods.
 - [OpenNN](http://www.opennn.net/): an open source class library written in C++ programming language which implements neural networks with deep architectures, a main area of machine learning research.
 - [DLib](http://dlib.net/ml.html): contains a wide range of machine learning algorithms. All designed to be highly modular, quick to execute, and simple to use via a clean and modern C++ API.
+- [Caffe](http://caffe.berkeleyvision.org/): a deep learning framework made with expression, speed, and modularity in mind.
 
 Comparison:
 
-|              |  MLPack  |  Shogun  |  OpenNN  |   DLib   |          |          |          |          |          |
+|              |  MLPack  |  Shogun  |  OpenNN  |   DLib   |  Caffe   |          |          |          |          |
 |--------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| License      | BSD like |  GPLv3   |  LGPLv3  |   Boost  |          |          |          |          |          |
-| Created      |   2011   |   1999   |   2012   |   2006   |          |          |          |          |          |
-| Active       |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+| License      | BSD like |  GPLv3   |  LGPLv3  |   Boost  |   BSD    |          |          |          |          |
+| Created      |   2011   |   1999   |   2012   |   2006   |   2013   |          |          |          |          |
+| Active       |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |
 |              |          |          |          |          |          |          |          |          |          |
 | Platforms:   |          |          |          |          |          |          |          |          |          |
-| - CPU        |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
-| - GPU        |    -     |    ?     |    ✓     |    -     |          |          |          |          |          |
+| - CPU        |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |
+| - GPU        |    -     |    ?     |    ✓     |    -     |    ✓     |          |          |          |          |
 | - OpenMP     |    -     |    ?     |    ✓     |    -     |          |          |          |          |          |
-| - Windows    |          |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+| - Windows    |          |    ✓     |    ✓     |    ✓     |    ~     |          |          |          |          |
 |              |          |          |          |          |          |          |          |          |          |
 | Features:    |          |          |          |          |          |          |          |          |          |
-| - Supervised |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |          |
+| - Supervised |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |
 | - Unsupervised|         |    ✓     |    -     |    ✓     |          |          |          |          |          |
-| - RL         |    ✓     |    -     |    -     |    ~     |          |          |          |          |          |
+| - RL         |    ✓     |    -     |    -     |    ~     |    ✓     |          |          |          |          |
 |              |          |          |          |          |          |          |          |          |          |
-| Matrix lib   | Armadillo|          |  Eigen   |   own    |          |          |          |          |          |
+| Matrix lib   | Armadillo|          |  Eigen   |   own    |   own    |          |          |          |          |
 |              |          |          |          |          |          |          |          |          |          |
-| Notable users|          |          |          |    10+   |          |          |          |          |          |
+| Notable users|          |          |          |    10+   |  1000+   |          |          |          |          |
 
+
+## Reinforcement Learning
+
+- [RLlib](https://github.com/HerveFrezza-Buet/RLlib) - C++ library for reinforcement learning. See the paper "[A C++ Template-Based Reinforcement Learning Library: Fitting the Code to the Mathematics](http://www.jmlr.org/papers/v14/frezza-buet13a.html)", Hervé Frezza-Buet, Matthieu Geist.
+- [RLLib (Saminda's)](http://web.cs.miami.edu/home/saminda/rllib.html) - a lightweight C++ template library that implements  incremental, standard, and gradient temporal-difference learning algorithms in Reinforcement Learning. See the [paper](http://robocup.oss-cn-beijing.aliyuncs.com/symposium%2FRoboCup_Symposium_2015_submission_3.pdf) (PDF).
 
 ## Other Lists
 
