@@ -60,6 +60,7 @@ Comparison:
 ## Machine Learning Frameworks
 
 Frameworks:
+- [Darknet](https://pjreddie.com/darknet/): open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation. Mainly geared towards CNNs but has some RNNs as well.
 - [MLPack](http://mlpack.org/): a scalable machine learning library, written in C++, that aims to provide fast, extensible implementations of cutting-edge machine learning algorithms.
 - [Shogun](http://shogun-toolbox.org/): open-source machine learning library that offers a wide range of efficient and unified machine learning methods.
 - [OpenNN](http://www.opennn.net/): an open source class library written in C++ programming language which implements neural networks with deep architectures, a main area of machine learning research.
@@ -71,28 +72,28 @@ Frameworks:
 
 Comparison:
 
-|              |  MLPack  |  Shogun  |  OpenNN  | DLib |Caffe| Dynet | Shark |  Fido  |          |          |
-|--------------|:--------:|:--------:|:--------:|:----:|:---:|:-----:|:-----:|:------:|:--------:|:--------:|
-| License      | BSD like |  GPLv3   |  LGPLv3  | Boost| BSD |Apache |  LGPL |   MIT  |          |          |
-| Created      |   2011   |   1999   |   2012   | 2006 | 2013| 2015  |  2008 |  2015? |          |          |
-| Active       |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |          |          |
-|              |          |          |          |      |     |       |       |        |          |          |
-| Platforms:   |          |          |          |      |     |       |       |        |          |          |
-| - CPU        |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ✓   |          |          |
-| - GPU        |    -     |    ?     |    ✓     |      |  ✓  |   ✓   |       |        |          |          |
-| - OpenMP     |    -     |    ?     |    ✓     |      |     |       |       |        |          |          |
-| - Windows    |          |    ✓     |    ✓     |  ✓   |  ~  |   ✓   |   ✓   |        |          |          |
-|              |          |          |          |      |     |       |       |        |          |          |
-| Features:    |          |          |          |      |     |       |       |        |          |          |
-| - Supervised |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |          |          |
-| - Unsupervised|         |    ✓     |    -     |  ✓   |     |       |   ✓   |        |          |          |
-| - RL         |    ✓     |    -     |    -     |  ~   |  ✓  |       |       |    ✓   |          |          |
-| - CNN        |          |          |          |  ✓   |  ✓  |       |       |        |          |          |
-| - RNN        |          |          |          |      |     |   ✓   |       |        |          |          |
-|              |          |          |          |      |     |       |       |        |          |          |
-| Matrix lib   | Armadillo|          |  Eigen   | own  | own | Eigen | uBLAS | -/STL  |          |          |
-|              |          |          |          |      |     |       |       |        |          |          |
-| Notable users|          |          |          |  10+ |1000+|  10+  |       |        |          |          |
+|              |Darknet |  MLPack  |  Shogun  |  OpenNN  | DLib |Caffe| Dynet | Shark |  Fido  |        |        |
+|--------------|:------:|:--------:|:--------:|:--------:|:----:|:---:|:-----:|:-----:|:------:|:------:|:------:|
+| License      |copyleft| BSD like |  GPLv3   |  LGPLv3  | Boost| BSD |Apache |  LGPL |   MIT  |        |        |
+| Created      |  2013  |   2011   |   1999   |   2012   | 2006 | 2013| 2015  |  2008 |  2015? |        |        |
+| Active       |    ~   |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |        |        |
+|              |        |          |          |          |      |     |       |       |        |        |        |
+| Platforms:   |        |          |          |          |      |     |       |       |        |        |        |
+| - GPU        |    ✓   |    -     |    ?     |    ✓     |  ✓   |  ✓  |   ✓   |       |        |        |        |
+| - OpenMP     |    ✓   |    -     |    ?     |    ✓     |      |  ✓  |       |       |        |        |        |
+| - OpenCL     |        |          |          |          |      |  ~  |       |       |        |        |        |
+| - Windows    |        |          |    ✓     |    ✓     |  ✓   |  ~  |   ✓   |   ✓   |        |        |        |
+|              |        |          |          |          |      |     |       |       |        |        |        |
+| Features:    |        |          |          |          |      |     |       |       |        |        |        |
+| - Supervised |    -   |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |        |        |
+| - Unsupervised|   -   |          |    ✓     |    -     |  ✓   |     |       |   ✓   |        |        |        |
+| - RL         |    -   |    ✓     |    -     |    -     |  ~   |  ✓  |       |       |    ✓   |        |        |
+| - CNN        |    ✓   |          |          |          |  ✓   |  ✓  |       |       |        |        |        |
+| - RNN        |    ✓   |          |          |          |      |     |   ✓   |       |        |        |        |
+|              |        |          |          |          |      |     |       |       |        |        |        |
+| Matrix lib   |  own   | Armadillo|          |  Eigen   | own  | own | Eigen | uBLAS | -/STL  |        |        |
+|              |        |          |          |          |      |     |       |       |        |        |        |
+| Notable users|        |          |          |          |  10+ |1000+|  10+  |       |        |        |        |
 
 
 Others:
