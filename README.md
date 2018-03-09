@@ -65,30 +65,48 @@ Frameworks:
 - [OpenNN](http://www.opennn.net/): an open source class library written in C++ programming language which implements neural networks with deep architectures, a main area of machine learning research.
 - [DLib](http://dlib.net/ml.html): contains a wide range of machine learning algorithms. All designed to be highly modular, quick to execute, and simple to use via a clean and modern C++ API.
 - [Caffe](http://caffe.berkeleyvision.org/): a deep learning framework made with expression, speed, and modularity in mind.
+- [Dynet](https://github.com/clab/dynet): DyNet is a neural network library developed by Carnegie Mellon University and many others. It is written in C++ (with bindings in Python) and is designed to be efficient when run on either CPU or GPU, and to work well with networks that have dynamic structures that change for every training instance. 
+- [Shark](http://image.diku.dk/shark/): Shark is a fast, modular, general open-source C++ machine
+learning library. 
+- [Fido](http://fidoproject.github.io/): Fido is a light-weight, open-source, and highly modular C++ machine learning library. The library is targeted towards embedded electronics and robotics.
 
 Comparison:
 
-|              |  MLPack  |  Shogun  |  OpenNN  |   DLib   |  Caffe   |          |          |          |          |
-|--------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| License      | BSD like |  GPLv3   |  LGPLv3  |   Boost  |   BSD    |          |          |          |          |
-| Created      |   2011   |   1999   |   2012   |   2006   |   2013   |          |          |          |          |
-| Active       |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |
-|              |          |          |          |          |          |          |          |          |          |
-| Platforms:   |          |          |          |          |          |          |          |          |          |
-| - CPU        |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |
-| - GPU        |    -     |    ?     |    ✓     |    -     |    ✓     |          |          |          |          |
-| - OpenMP     |    -     |    ?     |    ✓     |    -     |          |          |          |          |          |
-| - Windows    |          |    ✓     |    ✓     |    ✓     |    ~     |          |          |          |          |
-|              |          |          |          |          |          |          |          |          |          |
-| Features:    |          |          |          |          |          |          |          |          |          |
-| - Supervised |    ✓     |    ✓     |    ✓     |    ✓     |    ✓     |          |          |          |          |
-| - Unsupervised|         |    ✓     |    -     |    ✓     |          |          |          |          |          |
-| - RL         |    ✓     |    -     |    -     |    ~     |    ✓     |          |          |          |          |
-|              |          |          |          |          |          |          |          |          |          |
-| Matrix lib   | Armadillo|          |  Eigen   |   own    |   own    |          |          |          |          |
-|              |          |          |          |          |          |          |          |          |          |
-| Notable users|          |          |          |    10+   |  1000+   |          |          |          |          |
+|              |  MLPack  |  Shogun  |  OpenNN  | DLib |Caffe| Dynet | Shark |  Fido  |          |          |
+|--------------|:--------:|:--------:|:--------:|:----:|:---:|:-----:|:-----:|:------:|:--------:|:--------:|
+| License      | BSD like |  GPLv3   |  LGPLv3  | Boost| BSD |       |  LGPL |   MIT  |          |          |
+| Created      |   2011   |   1999   |   2012   | 2006 | 2013| 2015  |  2008 |  2015? |          |          |
+| Active       |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |       |   ✓   |    ~   |          |          |
+|              |          |          |          |      |     |       |       |        |          |          |
+| Platforms:   |          |          |          |      |     |       |       |        |          |          |
+| - CPU        |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ✓   |          |          |
+| - GPU        |    -     |    ?     |    ✓     |  -   |  ✓  |   ✓   |       |        |          |          |
+| - OpenMP     |    -     |    ?     |    ✓     |  -   |     |       |       |        |          |          |
+| - Windows    |          |    ✓     |    ✓     |  ✓   |  ~  |   ✓   |   ✓   |        |          |          |
+|              |          |          |          |      |     |       |       |        |          |          |
+| Features:    |          |          |          |      |     |       |       |        |          |          |
+| - Supervised |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |          |          |
+| - Unsupervised|         |    ✓     |    -     |  ✓   |     |       |   ✓   |        |          |          |
+| - RL         |    ✓     |    -     |    -     |  ~   |  ✓  |       |       |    ✓   |          |          |
+| - CNN        |          |          |          |      |     |       |       |        |          |          |
+| - RNN        |          |          |          |      |     |   ✓   |       |        |          |          |
+|              |          |          |          |      |     |       |       |        |          |          |
+| Matrix lib   | Armadillo|          |  Eigen   | own  | own | Eigen | uBLAS |None/STL|          |          |
+|              |          |          |          |      |     |       |       |        |          |          |
+| Notable users|          |          |          |  10+ |1000+|  10+  |       |        |          |          |
 
+
+Others:
+- [frugally-deep](https://github.com/Dobiasd/frugally-deep): Header-only library for using Keras models in C++:
+  - is a small header-only library written in modern and pure C++.
+  - is very easy to integrate and use.
+  - depends only on FunctionalPlus, Eigen and json - also header-only libraries.
+  - supports inference (model.predict) not only for sequential models but also for computational graphs with a more complex   - topology, created with the functional API.
+  - re-implements a (small) subset of TensorFlow, i.e. the operations needed to support prediction.
+  - results in a much smaller binary size than linking against TensorFlow.
+  - works out of-the-box also when compiled into a 32-bit executable.
+  - utterly ignores even the most powerful GPU in your system and uses only one CPU core. ;-)
+  - but is quite fast on one CPU core compared to TensorFlow.
 
 ## Reinforcement Learning
 
