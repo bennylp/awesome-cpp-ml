@@ -63,50 +63,40 @@ Frameworks:
 - [MLPack](http://mlpack.org/): a scalable machine learning library, written in C++, that aims to provide fast, extensible implementations of cutting-edge machine learning algorithms.
 - [Shogun](http://shogun-toolbox.org/): open-source machine learning library that offers a wide range of efficient and unified machine learning methods.
 - [OpenNN](http://www.opennn.net/): an open source class library written in C++ programming language which implements neural networks with deep architectures, a main area of machine learning research.
-- [DLib](http://dlib.net/ml.html): contains a wide range of machine learning algorithms. All designed to be highly modular, quick to execute, and simple to use via a clean and modern C++ API.
-- [Caffe](http://caffe.berkeleyvision.org/): a deep learning framework made with expression, speed, and modularity in mind.
-- [Dynet](https://github.com/clab/dynet): DyNet is a neural network library developed by Carnegie Mellon University and many others. It is written in C++ (with bindings in Python) and is designed to be efficient when run on either CPU or GPU, and to work well with networks that have dynamic structures that change for every training instance. 
-- [Shark](http://image.diku.dk/shark/): Shark is a fast, modular, general open-source C++ machine
-learning library. 
+- [DLib](http://dlib.net/ml.html): contains a wide range of machine learning algorithms. All designed to be highly modular, quick to execute, and simple to use via a clean and modern C++ API. See [paper (PDF)](http://jmlr.csail.mit.edu/papers/volume10/king09a/king09a.pdf).
+- [Caffe](http://caffe.berkeleyvision.org/): a deep learning framework made with expression, speed, and modularity in mind. Caffe is geared towards CNN (Caffe stands for Convolutional Architecture for Fast Feature Embedding). See [paper (PDF)](https://arxiv.org/pdf/1408.5093.pdf).
+- [Dynet](https://github.com/clab/dynet): neural network library by Carnegie Mellon University, aimed to work well with networks that have dynamic structures that change for every training instance. Seems to be geared towards sequence model (RNN/LSTM). See [paper (PDF)](https://arxiv.org/pdf/1701.03980.pdf).
+- [Shark](http://image.diku.dk/shark/): Shark is a fast, modular, general open-source C++ machine learning library. Contains many basic ML algorithms comparable to scikit-lean such as linear regression, SVM, neural networks, clustering, etc. See [paper (PDF)](http://www.jmlr.org/papers/volume9/igel08a/igel08a.pdf).
 - [Fido](http://fidoproject.github.io/): Fido is a light-weight, open-source, and highly modular C++ machine learning library. The library is targeted towards embedded electronics and robotics.
 
 Comparison:
 
 |              |  MLPack  |  Shogun  |  OpenNN  | DLib |Caffe| Dynet | Shark |  Fido  |          |          |
 |--------------|:--------:|:--------:|:--------:|:----:|:---:|:-----:|:-----:|:------:|:--------:|:--------:|
-| License      | BSD like |  GPLv3   |  LGPLv3  | Boost| BSD |       |  LGPL |   MIT  |          |          |
+| License      | BSD like |  GPLv3   |  LGPLv3  | Boost| BSD |Apache |  LGPL |   MIT  |          |          |
 | Created      |   2011   |   1999   |   2012   | 2006 | 2013| 2015  |  2008 |  2015? |          |          |
-| Active       |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |       |   ✓   |    ~   |          |          |
+| Active       |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |          |          |
 |              |          |          |          |      |     |       |       |        |          |          |
 | Platforms:   |          |          |          |      |     |       |       |        |          |          |
 | - CPU        |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ✓   |          |          |
-| - GPU        |    -     |    ?     |    ✓     |  -   |  ✓  |   ✓   |       |        |          |          |
-| - OpenMP     |    -     |    ?     |    ✓     |  -   |     |       |       |        |          |          |
+| - GPU        |    -     |    ?     |    ✓     |      |  ✓  |   ✓   |       |        |          |          |
+| - OpenMP     |    -     |    ?     |    ✓     |      |     |       |       |        |          |          |
 | - Windows    |          |    ✓     |    ✓     |  ✓   |  ~  |   ✓   |   ✓   |        |          |          |
 |              |          |          |          |      |     |       |       |        |          |          |
 | Features:    |          |          |          |      |     |       |       |        |          |          |
 | - Supervised |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |          |          |
 | - Unsupervised|         |    ✓     |    -     |  ✓   |     |       |   ✓   |        |          |          |
 | - RL         |    ✓     |    -     |    -     |  ~   |  ✓  |       |       |    ✓   |          |          |
-| - CNN        |          |          |          |      |     |       |       |        |          |          |
+| - CNN        |          |          |          |  ✓   |  ✓  |       |       |        |          |          |
 | - RNN        |          |          |          |      |     |   ✓   |       |        |          |          |
 |              |          |          |          |      |     |       |       |        |          |          |
-| Matrix lib   | Armadillo|          |  Eigen   | own  | own | Eigen | uBLAS |None/STL|          |          |
+| Matrix lib   | Armadillo|          |  Eigen   | own  | own | Eigen | uBLAS | -/STL  |          |          |
 |              |          |          |          |      |     |       |       |        |          |          |
 | Notable users|          |          |          |  10+ |1000+|  10+  |       |        |          |          |
 
 
 Others:
-- [frugally-deep](https://github.com/Dobiasd/frugally-deep): Header-only library for using Keras models in C++:
-  - is a small header-only library written in modern and pure C++.
-  - is very easy to integrate and use.
-  - depends only on FunctionalPlus, Eigen and json - also header-only libraries.
-  - supports inference (model.predict) not only for sequential models but also for computational graphs with a more complex   - topology, created with the functional API.
-  - re-implements a (small) subset of TensorFlow, i.e. the operations needed to support prediction.
-  - results in a much smaller binary size than linking against TensorFlow.
-  - works out of-the-box also when compiled into a 32-bit executable.
-  - utterly ignores even the most powerful GPU in your system and uses only one CPU core. ;-)
-  - but is quite fast on one CPU core compared to TensorFlow.
+- [frugally-deep](https://github.com/Dobiasd/frugally-deep): header-only library for using Keras models in C++, supporting CNN. Currently only runs on CPU.
 
 ## Reinforcement Learning
 
@@ -117,6 +107,7 @@ Others:
 
 - [Awesome Machine Learning (C++ Section)](https://github.com/josephmisiti/awesome-machine-learning#cpp)
 - [http://mloss.org/software/](http://mloss.org/software/) - machine learning OSS.
+- [Comparison of deep learning software](https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software) - Wikipedia
 
 ## Other Stuff
 
