@@ -74,7 +74,7 @@ Comparison:
 
 |              |Darknet |  MLPack  |  Shogun  |  OpenNN  | DLib |Caffe| Dynet | Shark |  Fido  |        |        |
 |--------------|:------:|:--------:|:--------:|:--------:|:----:|:---:|:-----:|:-----:|:------:|:------:|:------:|
-| License      |copyleft| BSD like |  GPLv3   |  LGPLv3  | Boost| BSD |Apache |  LGPL |   MIT  |        |        |
+| License      |copyleft| BSD like |   BSD    |  LGPLv3  | Boost| BSD |Apache |  LGPL |   MIT  |        |        |
 | Created      |  2013  |   2011   |   1999   |   2012   | 2006 | 2013| 2015  |  2008 |  2015? |        |        |
 | Active       |    ~   |    ✓     |    ✓     |    ✓     |  ✓   |  ✓  |   ✓   |   ✓   |    ~   |        |        |
 |              |        |          |          |          |      |     |       |       |        |        |        |
